@@ -1,12 +1,22 @@
 PODS:
   - Bugly (2.4.8)
+  - DMFunctionalUnit (1.0.1)
+  - DMMacroDefinition (1.0.0)
 
 DEPENDENCIES:
   - Bugly
+  - DMFunctionalUnit
+  - DMMacroDefinition (from `../GeraldRFord/DMMacroDefinition`)
+
+EXTERNAL SOURCES:
+  DMMacroDefinition:
+    :path: ../GeraldRFord/DMMacroDefinition
 
 SPEC CHECKSUMS:
   Bugly: da3c02408c14838d498429320545a8e439392978
+  DMFunctionalUnit: e3ee10ac1d7cba0ffaa76dc89ab1eb5cc4e65cd8
+  DMMacroDefinition: 9af89b04b916cb7392fcf890d57418e2a078260b
 
-PODFILE CHECKSUM: 73b941baf44d91fc7896d5960405279be4fa9a0b
+PODFILE CHECKSUM: 562748687b01b4be06d6ed25b1bcb94a26cb52ad
 
 COCOAPODS: 1.2.0

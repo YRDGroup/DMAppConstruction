@@ -1,8 +1,25 @@
+# Uncomment this line to define a global platform for your project
+# 让在测试环境下，pod的代码也可以加断点调试，否则po不出内容
+post_install do |installer|
+    installer.pods_project.build_configurations.each do |config|
+        if config.name.include?("YRDLC_Test")
+            config.build_settings['GCC_OPTIMIZATION_LEVEL'] = '0'
+        end
+    end
+end
+
 source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '7.0'
 
 target 'DMAppConstructionDemo' do
-pod 'Bugly'
+    #消除所有的警告
+    inhibit_all_warnings!
+    #一些常用的宏定义，可在开发文件夹更新
+    pod 'DMMacroDefinition', :path => '../GeraldRFord/DMMacroDefinition'
+    #异常检测工具
+    pod 'Bugly'
+    #常用category
+    pod 'DMFunctionalUnit'
 end
 
 
