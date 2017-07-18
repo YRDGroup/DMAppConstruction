@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB60DD621F1DBA370092C0C1 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = EB60DD611F1DBA370092C0C1 /* Reachability.m */; };
 		EB70D8091F0D036E008E8D96 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EB70D8081F0D036E008E8D96 /* main.m */; };
 		EB70D80C1F0D036E008E8D96 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EB70D80B1F0D036E008E8D96 /* AppDelegate.m */; };
 		EB70D80F1F0D036E008E8D96 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB70D80E1F0D036E008E8D96 /* ViewController.m */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EB60DD601F1DBA370092C0C1 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		EB60DD611F1DBA370092C0C1 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		EB70D8041F0D036E008E8D96 /* DMMacroDefinitionDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DMMacroDefinitionDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB70D8081F0D036E008E8D96 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EB70D80A1F0D036E008E8D96 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -85,6 +88,8 @@
 			isa = PBXGroup;
 			children = (
 				EB70D81F1F0D03AD008E8D96 /* DMMacroDefinition.h */,
+				EB60DD601F1DBA370092C0C1 /* Reachability.h */,
+				EB60DD611F1DBA370092C0C1 /* Reachability.m */,
 			);
 			name = DMMacroDefinition;
 			path = ../../DMMacroDefinition;
@@ -164,6 +169,7 @@
 			files = (
 				EB70D80F1F0D036E008E8D96 /* ViewController.m in Sources */,
 				EB70D80C1F0D036E008E8D96 /* AppDelegate.m in Sources */,
+				EB60DD621F1DBA370092C0C1 /* Reachability.m in Sources */,
 				EB70D8091F0D036E008E8D96 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -325,6 +331,7 @@
 				EB70D81D1F0D036E008E8D96 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

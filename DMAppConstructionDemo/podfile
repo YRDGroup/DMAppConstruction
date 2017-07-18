@@ -16,10 +16,10 @@ target 'DMAppConstructionDemo' do
     inhibit_all_warnings!
     #一些常用的宏定义，可在开发文件夹更新
     pod 'DMMacroDefinition', :path => '../GeraldRFord/DMMacroDefinition'
+    #常用的工具类拆分
+    pod 'DMFunctionalUnit', :path => '../GeraldRFord/DMFunctionalUnit'
     #异常检测工具
     pod 'Bugly'
-    #常用category
-    pod 'DMFunctionalUnit'
 end
 
 

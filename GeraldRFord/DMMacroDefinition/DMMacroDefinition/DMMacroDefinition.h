@@ -65,5 +65,12 @@
 //判断 iOS 10 或更高的系统版本
 #define IS_iOS10_OR_LATER (([[[UIDevice currentDevice] systemVersion] floatValue] >=10.0)? (YES):(NO))
 
+//网络状态判断
+#define __IsWifiConnected     \
+([[Reachability reachabilityForInternetConnection] currentReachabilityStatus] == ReachableViaWiFi)
+#define __IsWWANConnected     \
+([[Reachability reachabilityForInternetConnection] currentReachabilityStatus] == ReachableViaWWAN)
+#define __IsNetWorkConnected  \
+(__IsWifiConnected || __IsWWANConnected)
 
 #endif /* DMMacroDefinition_h */
